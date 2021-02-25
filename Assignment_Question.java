@@ -27,7 +27,7 @@ Input: [2, 5, 9, 11], target=11 Output: [0, 2] Explanation: The numbers at index
             arr[i]= sc.nextInt();
         }
         int target = sc.nextInt();
-        int [] indices = getPair(arr,target);
+        int[] indices = getPair(arr,target);
         System.out.println(indices[0] + "  " + indices[1]);
 
 
