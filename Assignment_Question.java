@@ -36,13 +36,13 @@ Input: [2, 5, 9, 11], target=11 Output: [0, 2] Explanation: The numbers at index
     public static int[] getPair(int[] arr, int target){
 
        // Approach 1
-
-        int index1=0;
+        
+        int index1=0;       // initially
         int index2=0;
         for(int i=0;i<arr.length;i++){
             for(int j=i+1;j<arr.length;j++){
                 if(arr[i]+arr[j]==target){        // checking the condition for sum of two index meet to target if meet then that will be the index
-                    index1=i;
+                    index1=i;                // updating the index
                     index2=j;
                 }
             }
