@@ -28,6 +28,7 @@ Input: [2, 5, 9, 11], target=11 Output: [0, 2] Explanation: The numbers at index
         }
         int target = sc.nextInt();
         int [] indices = getPair(arr,target);
+        System.out.println(indices[0] + "  " + indices[1]);
 
 
     }
@@ -40,7 +41,7 @@ Input: [2, 5, 9, 11], target=11 Output: [0, 2] Explanation: The numbers at index
         int index2=0;
         for(int i=0;i<arr.length;i++){
             for(int j=i+1;j<arr.length;j++){
-                if(arr[i]+arr[j]==target){
+                if(arr[i]+arr[j]==target){        // checking the condition for sum of two index meet to target if meet then that will be the index
                     index1=i;
                     index2=j;
                 }
